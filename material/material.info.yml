@@ -1,0 +1,6 @@
+name: Material
+description: Create a page for show whether Info.
+package: Custom
+type: module
+version: 1.0
+core: 8.x

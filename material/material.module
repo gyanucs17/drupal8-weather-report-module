@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Contains material.module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function material_theme() {
+  return [
+    'weather_forecast' => [
+      'variables' => [
+        'city' => NULL,
+        'forecast' => NULL,
+        'timezone' => NULL,
+        'increments' => 40,
+      ],
+      'template' => 'weather-forecast',
+    ],
+
+    'weather_report' => [
+      'variables' => [
+        'city' => NULL,
+        'timezone' => NULL,
+        'icon' => NULL,
+        'humidity' => NULL,
+        'wind' => NULL,
+        'date' => NULL,
+        'temp' => NULL,
+
+      ],
+      'template' => 'weather-report',
+    ],
+  ];
+}
+
+function material_preprocess_page(&$variables) {
+  $variables['#attached']['library'][] =  'material/weather';
+}

@@ -1,0 +1,6 @@
+material.weather:
+  title: 'Weather Report'
+  description: 'Weather Report'
+  parent: main
+  menu_name: main
+  route_name: material.weather

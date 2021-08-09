@@ -1,0 +1,7 @@
+material.weather:
+  path: 'weather'
+  defaults:
+    _controller: '\Drupal\material\Controller\WeatherController::weather'
+    _title: 'Weather Report'
+  requirements: 
+    _permission: 'access content'

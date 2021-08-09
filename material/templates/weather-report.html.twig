@@ -1,0 +1,18 @@
+<h2>Weather Details for {{ city }}</h2>
+<h3>Date: {{ date | date("D, F d, ga", timezone) }}</h3>
+<div class="timezone-note">Note: Weather detail are given in the local timezone of the city.</div>
+<div class="UQt4rd">
+	<img src="http://openweathermap.org/img/wn/{{ icon }}@2x.png" alt="" width="20">
+	<div class="Ab33Nc" aria-level="3" role="heading">
+		<div>
+			<div class="vk_bk TylWce">Temprature: 
+				<span class="wob_t TVtOme" style="display:inline">{{ temp }}</span>
+				<span class="wob_t" style="display:inline;margin-left:-1px" aria-label="°Celsius" aria-disabled="true" role="button">°C</span>
+			</div>
+		</div>
+	</div>
+	<div class="wtsRwe">
+		<div>Humidity: <span id="wob_hm">{{ humidity }}%</span></div>
+		<div>Wind: <span><span class="wob_t" id="wob_ws">{{ wind }} km/h</span></span></div>
+	</div>
+</div>
